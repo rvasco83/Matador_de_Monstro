@@ -1,7 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        started: true,
+        started: false,
         playerLife: 0,
         monsterLife: 20,
     },
@@ -11,7 +11,11 @@ new Vue({
         }
     },
     methods: {
-
+        startGame() {
+            this.started = true
+            this.playerLife = 100
+            this.monsterLife =100
+        }
     },
     watch: {
 
